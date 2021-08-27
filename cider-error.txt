@@ -1,0 +1,184 @@
+
+  Show: Project-Only All 
+  Hide: Clojure Java REPL Tooling Duplicates  (52 frames hidden)
+
+  This is an unexpected CIDER middleware error.
+  Please submit a bug report via `M-x cider-report-bug`.
+
+  If these stacktraces are occurring frequently, consider using the
+  button(s) below to suppress these types of errors for the duration of
+  your current CIDER session. The stacktrace buffer will still be
+  generated, but it will "pop under" your current buffer instead of
+  "popping over". The button toggles this behavior.
+
+ Suppress macroexpand-error 
+
+2. Unhandled java.lang.ClassCastException
+   class clojure.lang.Var$Unbound cannot be cast to class
+   clojure.lang.DynamicClassLoader (clojure.lang.Var$Unbound and
+   clojure.lang.DynamicClassLoader are in unnamed module of loader
+   'app')
+
+              genclass.clj:  722  clojure.core/gen-interface
+              genclass.clj:  688  clojure.core/gen-interface
+               RestFn.java:  142  clojure.lang.RestFn/applyTo
+                  Var.java:  705  clojure.lang.Var/applyTo
+             Compiler.java: 6997  clojure.lang.Compiler/macroexpand1
+                  core.clj: 4012  clojure.core/macroexpand-1
+                  core.clj: 4014  clojure.core/macroexpand
+                  walk.clj:  130  clojure.walk/macroexpand-all/fn
+                  walk.clj:   65  clojure.walk/prewalk
+                  walk.clj:   61  clojure.walk/prewalk
+                  core.clj: 2628  clojure.core/partial/fn
+                  core.clj: 2759  clojure.core/map/fn
+              LazySeq.java:   42  clojure.lang.LazySeq/sval
+              LazySeq.java:   51  clojure.lang.LazySeq/seq
+                 Cons.java:   39  clojure.lang.Cons/next
+                   RT.java:  713  clojure.lang.RT/next
+                  core.clj:   64  clojure.core/next
+                  core.clj: 3130  clojure.core/dorun
+                  core.clj: 3136  clojure.core/doall
+                  walk.clj:   47  clojure.walk/walk
+                  walk.clj:   65  clojure.walk/prewalk
+                  walk.clj:  126  clojure.walk/macroexpand-all
+                  walk.clj:  126  clojure.walk/macroexpand-all
+           macroexpand.clj:  118  cider.nrepl.middleware.macroexpand/expand-clj/fn
+           macroexpand.clj:  117  cider.nrepl.middleware.macroexpand/expand-clj
+           macroexpand.clj:  111  cider.nrepl.middleware.macroexpand/expand-clj
+           macroexpand.clj:  216  cider.nrepl.middleware.macroexpand/macroexpansion
+           macroexpand.clj:  212  cider.nrepl.middleware.macroexpand/macroexpansion
+           macroexpand.clj:  222  cider.nrepl.middleware.macroexpand/macroexpansion-reply
+           macroexpand.clj:  221  cider.nrepl.middleware.macroexpand/macroexpansion-reply
+        error_handling.clj:  160  cider.nrepl.middleware.util.error-handling/eval2258/fn
+              MultiFn.java:  234  clojure.lang.MultiFn/invoke
+           macroexpand.clj:  225  cider.nrepl.middleware.macroexpand/handle-macroexpand
+           macroexpand.clj:  224  cider.nrepl.middleware.macroexpand/handle-macroexpand
+                  Var.java:  388  clojure.lang.Var/invoke
+                 nrepl.clj:  283  cider.nrepl/wrap-macroexpand/fn
+            middleware.clj:   16  nrepl.middleware/wrap-conj-descriptor/fn
+                 nrepl.clj:  522  cider.nrepl/wrap-clojuredocs/fn
+            middleware.clj:   16  nrepl.middleware/wrap-conj-descriptor/fn
+                 nrepl.clj:  428  cider.nrepl/wrap-stacktrace/fn
+            middleware.clj:   16  nrepl.middleware/wrap-conj-descriptor/fn
+                 nrepl.clj:  204  cider.nrepl/wrap-info/fn
+            middleware.clj:   16  nrepl.middleware/wrap-conj-descriptor/fn
+    interruptible_eval.clj:  154  nrepl.middleware.interruptible-eval/interruptible-eval/fn
+            middleware.clj:   16  nrepl.middleware/wrap-conj-descriptor/fn
+                 nrepl.clj:  223  cider.nrepl/wrap-inspect/fn
+            middleware.clj:   16  nrepl.middleware/wrap-conj-descriptor/fn
+               session.clj:  363  nrepl.middleware.session/add-stdin/fn
+            middleware.clj:   16  nrepl.middleware/wrap-conj-descriptor/fn
+             load_file.clj:   81  nrepl.middleware.load-file/wrap-load-file/fn
+            middleware.clj:   16  nrepl.middleware/wrap-conj-descriptor/fn
+                 nrepl.clj:  105  cider.nrepl/wrap-content-type/fn
+            middleware.clj:   16  nrepl.middleware/wrap-conj-descriptor/fn
+                caught.clj:   97  nrepl.middleware.caught/wrap-caught/fn
+            middleware.clj:   16  nrepl.middleware/wrap-conj-descriptor/fn
+                 nrepl.clj:  330  cider.nrepl/wrap-out/fn
+            middleware.clj:   16  nrepl.middleware/wrap-conj-descriptor/fn
+                 nrepl.clj:  159  cider.nrepl/wrap-debug/fn
+            middleware.clj:   16  nrepl.middleware/wrap-conj-descriptor/fn
+                 print.clj:  234  nrepl.middleware.print/wrap-print/fn
+            middleware.clj:   16  nrepl.middleware/wrap-conj-descriptor/fn
+                 nrepl.clj:  478  cider.nrepl/wrap-tracker/fn
+            middleware.clj:   16  nrepl.middleware/wrap-conj-descriptor/fn
+            sideloader.clj:  104  nrepl.middleware.sideloader/wrap-sideloader/fn
+            middleware.clj:   16  nrepl.middleware/wrap-conj-descriptor/fn
+                lookup.clj:   51  nrepl.middleware.lookup/wrap-lookup/fn
+            middleware.clj:   16  nrepl.middleware/wrap-conj-descriptor/fn
+               session.clj:  309  nrepl.middleware.session/session/fn
+            middleware.clj:   16  nrepl.middleware/wrap-conj-descriptor/fn
+                 nrepl.clj:  186  cider.nrepl/wrap-enlighten/fn
+            middleware.clj:   16  nrepl.middleware/wrap-conj-descriptor/fn
+                server.clj:  130  nrepl.server/default-handler/fn
+                server.clj:   22  nrepl.server/handle*
+                server.clj:   19  nrepl.server/handle*
+                server.clj:   39  nrepl.server/handle/fn
+                  core.clj: 2034  clojure.core/binding-conveyor-fn/fn
+                  AFn.java:   18  clojure.lang.AFn/call
+           FutureTask.java:  264  java.util.concurrent.FutureTask/run
+   ThreadPoolExecutor.java: 1128  java.util.concurrent.ThreadPoolExecutor/runWorker
+   ThreadPoolExecutor.java:  628  java.util.concurrent.ThreadPoolExecutor$Worker/run
+               Thread.java:  835  java.lang.Thread/run
+
+1. Caused by clojure.lang.Compiler$CompilerException
+   Error compiling NO_SOURCE_PATH at (0:0)
+   #:clojure.error{:phase :macroexpansion, :line 0, :column 0, :source "NO_SOURCE_PATH", :symbol clojure.core/gen-interface}
+             Compiler.java: 7023  clojure.lang.Compiler/macroexpand1
+                  core.clj: 4012  clojure.core/macroexpand-1
+                  core.clj: 4014  clojure.core/macroexpand
+                  walk.clj:  130  clojure.walk/macroexpand-all/fn
+                  walk.clj:   65  clojure.walk/prewalk
+                  walk.clj:   61  clojure.walk/prewalk
+                  core.clj: 2628  clojure.core/partial/fn
+                  core.clj: 2759  clojure.core/map/fn
+              LazySeq.java:   42  clojure.lang.LazySeq/sval
+              LazySeq.java:   51  clojure.lang.LazySeq/seq
+                 Cons.java:   39  clojure.lang.Cons/next
+                   RT.java:  713  clojure.lang.RT/next
+                  core.clj:   64  clojure.core/next
+                  core.clj: 3130  clojure.core/dorun
+                  core.clj: 3136  clojure.core/doall
+                  walk.clj:   47  clojure.walk/walk
+                  walk.clj:   65  clojure.walk/prewalk
+                  walk.clj:  126  clojure.walk/macroexpand-all
+                  walk.clj:  126  clojure.walk/macroexpand-all
+           macroexpand.clj:  118  cider.nrepl.middleware.macroexpand/expand-clj/fn
+           macroexpand.clj:  117  cider.nrepl.middleware.macroexpand/expand-clj
+           macroexpand.clj:  111  cider.nrepl.middleware.macroexpand/expand-clj
+           macroexpand.clj:  216  cider.nrepl.middleware.macroexpand/macroexpansion
+           macroexpand.clj:  212  cider.nrepl.middleware.macroexpand/macroexpansion
+           macroexpand.clj:  222  cider.nrepl.middleware.macroexpand/macroexpansion-reply
+           macroexpand.clj:  221  cider.nrepl.middleware.macroexpand/macroexpansion-reply
+        error_handling.clj:  160  cider.nrepl.middleware.util.error-handling/eval2258/fn
+              MultiFn.java:  234  clojure.lang.MultiFn/invoke
+           macroexpand.clj:  225  cider.nrepl.middleware.macroexpand/handle-macroexpand
+           macroexpand.clj:  224  cider.nrepl.middleware.macroexpand/handle-macroexpand
+                  Var.java:  388  clojure.lang.Var/invoke
+                 nrepl.clj:  283  cider.nrepl/wrap-macroexpand/fn
+            middleware.clj:   16  nrepl.middleware/wrap-conj-descriptor/fn
+                 nrepl.clj:  522  cider.nrepl/wrap-clojuredocs/fn
+            middleware.clj:   16  nrepl.middleware/wrap-conj-descriptor/fn
+                 nrepl.clj:  428  cider.nrepl/wrap-stacktrace/fn
+            middleware.clj:   16  nrepl.middleware/wrap-conj-descriptor/fn
+                 nrepl.clj:  204  cider.nrepl/wrap-info/fn
+            middleware.clj:   16  nrepl.middleware/wrap-conj-descriptor/fn
+    interruptible_eval.clj:  154  nrepl.middleware.interruptible-eval/interruptible-eval/fn
+            middleware.clj:   16  nrepl.middleware/wrap-conj-descriptor/fn
+                 nrepl.clj:  223  cider.nrepl/wrap-inspect/fn
+            middleware.clj:   16  nrepl.middleware/wrap-conj-descriptor/fn
+               session.clj:  363  nrepl.middleware.session/add-stdin/fn
+            middleware.clj:   16  nrepl.middleware/wrap-conj-descriptor/fn
+             load_file.clj:   81  nrepl.middleware.load-file/wrap-load-file/fn
+            middleware.clj:   16  nrepl.middleware/wrap-conj-descriptor/fn
+                 nrepl.clj:  105  cider.nrepl/wrap-content-type/fn
+            middleware.clj:   16  nrepl.middleware/wrap-conj-descriptor/fn
+                caught.clj:   97  nrepl.middleware.caught/wrap-caught/fn
+            middleware.clj:   16  nrepl.middleware/wrap-conj-descriptor/fn
+                 nrepl.clj:  330  cider.nrepl/wrap-out/fn
+            middleware.clj:   16  nrepl.middleware/wrap-conj-descriptor/fn
+                 nrepl.clj:  159  cider.nrepl/wrap-debug/fn
+            middleware.clj:   16  nrepl.middleware/wrap-conj-descriptor/fn
+                 print.clj:  234  nrepl.middleware.print/wrap-print/fn
+            middleware.clj:   16  nrepl.middleware/wrap-conj-descriptor/fn
+                 nrepl.clj:  478  cider.nrepl/wrap-tracker/fn
+            middleware.clj:   16  nrepl.middleware/wrap-conj-descriptor/fn
+            sideloader.clj:  104  nrepl.middleware.sideloader/wrap-sideloader/fn
+            middleware.clj:   16  nrepl.middleware/wrap-conj-descriptor/fn
+                lookup.clj:   51  nrepl.middleware.lookup/wrap-lookup/fn
+            middleware.clj:   16  nrepl.middleware/wrap-conj-descriptor/fn
+               session.clj:  309  nrepl.middleware.session/session/fn
+            middleware.clj:   16  nrepl.middleware/wrap-conj-descriptor/fn
+                 nrepl.clj:  186  cider.nrepl/wrap-enlighten/fn
+            middleware.clj:   16  nrepl.middleware/wrap-conj-descriptor/fn
+                server.clj:  130  nrepl.server/default-handler/fn
+                server.clj:   22  nrepl.server/handle*
+                server.clj:   19  nrepl.server/handle*
+                server.clj:   39  nrepl.server/handle/fn
+                  core.clj: 2034  clojure.core/binding-conveyor-fn/fn
+                  AFn.java:   18  clojure.lang.AFn/call
+           FutureTask.java:  264  java.util.concurrent.FutureTask/run
+   ThreadPoolExecutor.java: 1128  java.util.concurrent.ThreadPoolExecutor/runWorker
+   ThreadPoolExecutor.java:  628  java.util.concurrent.ThreadPoolExecutor$Worker/run
+               Thread.java:  835  java.lang.Thread/run
+
